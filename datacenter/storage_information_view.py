@@ -10,11 +10,11 @@ def storage_information_view(request):
     non_closed_visits = []
     for visit in visits_without_leave:
         duration = get_duration(visit)
-        duration_str = format_duration(duration)
+        formated_duration = format_duration(duration)
         non_closed_visit = {
             "who_entered": visit.passcard,
             "entered_at": localtime(visit.entered_at).strftime("%d %B %Y г. %H:%M"),
-            "duration": duration_str,
+            "duration": formated_duration,
         }
         non_closed_visits.append(non_closed_visit)
 
