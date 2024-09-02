@@ -50,3 +50,4 @@
 - Python 3.8 или выше
 - Psycopg2 2.9.*
 - python-dotenv 1.0.1
+- datacenter 0.0.2
