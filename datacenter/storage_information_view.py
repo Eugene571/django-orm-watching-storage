@@ -1,4 +1,4 @@
-from datacenter.models import Passcard, Visit, get_duration, format_duration
+from datacenter.models import Visit, get_duration, format_duration
 from django.shortcuts import render
 from time import localtime
 from django.utils.timezone import localtime  # noqa: F811
